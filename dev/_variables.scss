@@ -1,0 +1,37 @@
+$primary-color: rgb(80, 44, 12);
+$text-color: rgba(255, 255, 255, 1);
+$secondary-color: rgb(139, 189, 100);
+$hover-color: rgb(116, 163, 79);
+$form-btn: rgb(130, 176, 129);
+$dark-color: black;
+$light-tone: rgb(193, 178, 124);
+$light-fill: rgb(135, 155, 110);
+$light-fill-shade: rgb(112, 132, 88);
+$mid-tone: rgb(198, 164, 99);
+$mid-fill: rgb(89, 129, 87);
+$mid-fill-shade: rgb(65, 106, 63);
+$end-tone: rgb(200, 150, 76);
+$end-fill: rgb(40, 110, 76);
+$end-fill-darker: rgb(8,100,76);
+$end-fill-shade: rgb(29, 93, 62);
+$gold: rgb(222, 191, 132);
+$neon: rgb(154, 225, 123);
+
+@mixin main-background {
+    background: rgb(8,100,76);
+    background: linear-gradient(90deg, rgba(8,100,76,1) 35%, rgba(132,113,76,1) 100%);
+}
+
+@mixin filler {
+    color: rgb(41,100,68);
+}
+
+@mixin secondary-background {
+    background: rgb(193,178,124);
+    background: linear-gradient(90deg, rgba(193,178,124,1) 0%, rgba(0,100,76,1) 100%);
+}
+
+@mixin text-field {
+    color: $primary-color;
+    background-color: $light-tone;
+}

@@ -1,0 +1,178 @@
+html, body {
+    @include main-background;
+    color: $text-color;
+}
+
+
+nav {
+    background-color: $primary-color;
+
+    .nav-link {
+        color: $gold;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+
+    .navbar-toggler {
+        background-color: $secondary-color;
+    }
+
+    .navbar-brand {
+        width: 150px;
+    }
+}
+
+.container-mod {
+    max-width: 900px;
+}
+
+.container-mod-2 {
+    @include secondary-background;
+    color: $dark-color;
+}
+
+.container-mod-3 {
+    background-color: $end-fill-darker;
+}
+
+.btn-custom {
+    background-color: $neon;
+    font-weight: 500;
+
+    &:hover {
+        background-color: $hover-color;
+    }
+
+    &-1, &-2, &-3, &-4 {
+        &:hover {
+            color: $text-color;
+        }
+    }
+
+    &-1 {
+        background-color: $light-fill;
+
+        &:hover {
+            background-color: $light-fill-shade;
+        }
+    }
+
+    &-2 {
+        background-color: $mid-fill;
+
+        &:hover {
+            background-color: $mid-fill-shade;
+        }
+    }
+
+    &-3 {
+        background-color: $end-fill;
+
+        &:hover {
+            background-color: $end-fill-shade;
+        }
+    }
+
+    &-4 {
+        border-radius: 5px;
+        border: none;
+        background-color: $form-btn;
+
+        &:hover {
+            background-color: $mid-fill;
+        }
+    }
+}
+
+.btn-outline-custom {
+    border: 2px solid $neon;
+    color: $neon;
+    font-weight: 500;
+
+    &:hover {
+        background-color: $secondary-color;
+    }
+
+}
+
+.doc-image {
+    max-width: 400px;
+
+    @media (max-width: 450px) {
+        max-width: 90%;
+      }
+}
+
+.logo-image {
+    max-width: 160px;
+}
+
+.color-fill {
+    background-color: $primary-color;
+
+    &-1, &-2, &-3 {
+        border-radius: 10px;
+        color: black;
+        min-width: 300px;
+
+        @media (max-width: 300px) {
+            min-width: 95%;
+          }
+
+        p {
+            font-weight: 500;
+        }
+    }
+
+    &-1 {
+        background-color: $light-tone;
+    }
+
+    &-2 {
+        background-color: $mid-tone;
+    }
+
+    &-3 {
+        background-color: $end-tone;
+    }
+}
+
+.circle-fill {
+    @include main-background;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+}
+
+.fill-gradient {
+    @include filler;
+}
+
+textarea, input {
+    @include text-field;
+    border-radius: 5px;
+    border: none;  
+
+    &:focus {
+        outline: none;
+    }
+}
+
+input {
+    &::placeholder {
+        color: $primary-color;
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+.gold-text {
+    color: $gold;
+}
+
+
+
