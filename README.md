@@ -3,7 +3,7 @@ This is a fully responsive sample landing page for a counselling service. **[Cic
 
 Complete with:
 - fav icon
-- mostly Boostrap styling with minor adjustments for custom colors and display 
+- mostly Bootstrap styling with minor adjustments for custom colors and display 
 - easy navigation
 
 It features a main section meant to lead to a current offer and a presentation video. Immediately following: sponsors logo list.
